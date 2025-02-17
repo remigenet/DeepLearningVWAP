@@ -2,10 +2,10 @@ name: Run tests on multiple backends
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, main ]
     paths: ['dvwap/**', 'tests/**', 'pyproject.toml', '.github/workflows/dvwap_ci.yml']
   pull_request:
-    branches: [ master ]
+    branches: [ master, main]
     paths: ['dvwap/**', 'tests/**', 'pyproject.toml', '.github/workflows/dvwap_ci.yml']
 
 
