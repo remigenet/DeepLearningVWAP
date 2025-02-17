@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "dvwap" 
+version = "0.1.0" 
+description = "Deep-Learning for Optimal VWAP Execution"
+authors = [ "Rémi Genet",]  
+readme = "README.md"  
+packages = [{include = "dvwap"}]  
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+keras = "^3.0.0"
+temporal_linear_network = "^0.1.2"
+scikit-learn = "^1.5.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-xdist = "^3.6.1"
+tensorflow = "^2.15.0"
+torch = "^2.0.0"
+jax = "^0.4.13"
+jaxlib = "^0.4.13"
+pandas = "^2.0.0"
+numpy = "^2.0.0"
+
+[tool.pytest.ini_options]
+addopts = "-v"
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore:Can't initialize NVML:UserWarning",
+    "ignore:jax.xla_computation is deprecated:DeprecationWarning",
+    "ignore:__array_wrap__ must accept context and return_scalar arguments:DeprecationWarning:torch",
+]
