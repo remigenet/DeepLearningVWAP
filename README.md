@@ -1,6 +1,6 @@
 # Deep Learning for VWAP Execution
 
-This repository presents Aplo's latest research on VWAP execution and contains the code discussed in the paper [Deep Learning for VWAP Execution in Crypto Markets: Beyond the Volume Curve]().
+This repository presents Aplo's latest research on VWAP execution and contains the code discussed in the paper [Deep Learning for VWAP Execution in Crypto Markets: Beyond the Volume Curve](https://arxiv.org/abs/2502.13722).
 
 ## Model
 
@@ -9,9 +9,7 @@ The model is proposed as a keras3 package that works with any backend (tensorflo
 ## Installation
 
 1. Download the repository
-2. Run `pip install .`
-
-(A PyPI package is coming soon)
+2. Run `pip install .` or `poetry install` (recommended) in the root folder of the repository
 
 ## Usage
 
