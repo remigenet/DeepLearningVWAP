@@ -11,6 +11,12 @@ The model is proposed as a keras3 package that works with any backend (tensorflo
 1. Download the repository
 2. Run `pip install .` or `poetry install` (recommended) in the root folder of the repository
 
+Alternatively, you can install the package from PyPi:
+
+```bash
+pip install dvwap
+```
+
 ## Usage
 
 ```python
